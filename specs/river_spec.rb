@@ -9,19 +9,22 @@ class RiverTest < MiniTest::Test
     fish2 = Fish.new("Billy")
     fish3 = Fish.new("Craig")
 
-    @river = River.new("Isonzo", [fish1, fish2, fish3])
+    @river = River.new("Isonzo")
   end
 
   def test_get_river_name
     assert_equal("Isonzo", @river.name())
   end
 
-  def test_fish_count__full
-    assert_equal(3, @river.fish_count())
+  def test_fish_count__empty
+    assert_equal(0, @river.fish_count())
   end
 
-
-
+  def test_fish_count__remove_fish
+    skip
+    @river.fish_taken()
+    assert_equal(2, @river.fish_count())
+  end
 
 
 end
