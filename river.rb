@@ -19,7 +19,4 @@ class River
     @fish_number.slice!(1)
   end
 
-
-
-
 end

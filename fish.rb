@@ -7,5 +7,4 @@ class Fish
     @name = name
   end
 
-
 end

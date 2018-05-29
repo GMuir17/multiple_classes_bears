@@ -15,12 +15,4 @@ class FishTest < MiniTest::Test
   end
 
 
-
-
-
-
-
-
-
-
 end
