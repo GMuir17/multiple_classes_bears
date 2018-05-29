@@ -11,9 +11,13 @@ class River
     return @fish_number.count()
   end
 
-  def fish_taken()
-    @fish_number.delete()
+  def add_fish(fish)
+    @fish_number.push(fish)
   end
+
+  # def fish_taken()
+  #   @fish_number.delete()
+  # end
 
 
 

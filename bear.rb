@@ -13,7 +13,9 @@ class Bear
   end
 
   def eat_fish(river)
-    @stomach_contents.push(@fish_number)
+    dead_fish = @fish_number.slice(1)
+    @stomach_contents.push(dead_fish)
+    @fish_number.delete(dead_fish)
   end
 
 
