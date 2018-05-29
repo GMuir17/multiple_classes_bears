@@ -12,13 +12,13 @@ class Bear
     return @stomach_contents.count()
   end
 
-  # def eat_fish(river)
-  #   @stomach_contents.push(@fish_number)
-  # end
-
   def eat_fish(river)
     eaten_fish = river.fish_taken()
     @stomach_contents.push(eaten_fish)
+  end
+
+  def talk()
+    return "This bear goes -ROAR!!-"
   end
 
 end
