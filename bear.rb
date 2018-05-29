@@ -12,7 +12,9 @@ class Bear
     return @stomach_contents.count()
   end
 
-
+  def eat_fish(river)
+    @stomach_contents.push(@fish_number)
+  end
 
 
 
