@@ -10,7 +10,7 @@ class BearTest < MiniTest::Test
     fish2 = Fish.new("Billy")
     fish3 = Fish.new("Craig")
 
-    @river1 = River.new("Isonzo", [fish1, fish2, fish3])
+    @river = River.new("Isonzo", [fish1, fish2, fish3])
 
     @bear = Bear.new("Luigi", "Brown")
   end
