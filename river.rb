@@ -15,9 +15,9 @@ class River
     @fish_number.push(fish)
   end
 
-  # def fish_taken()
-  #   @fish_number.delete()
-  # end
+  def fish_taken()
+    @fish_number.slice!(1)
+  end
 
 
 

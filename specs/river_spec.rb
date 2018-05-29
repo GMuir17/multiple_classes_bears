@@ -13,7 +13,6 @@ class RiverTest < MiniTest::Test
   end
 
   def test_get_river_name
-    p @river
     assert_equal("Isonzo", @river.name())
   end
 
@@ -28,11 +27,13 @@ class RiverTest < MiniTest::Test
     assert_equal(3, @river.fish_count())
   end
 
-  # def test_fish_count__remove_fish
-  #   skip
-  #   @river.fish_taken()
-  #   assert_equal(2, @river.fish_count())
-  # end
+  def test_fish_count__remove_fish
+    @river.add_fish(@fish1)
+    @river.add_fish(@fish2)
+    @river.add_fish(@fish3)
+    @river.fish_taken()
+    assert_equal(2, @river.fish_count())
+  end
 
 
 end
