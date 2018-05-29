@@ -8,7 +8,9 @@ class Bear
     @stomach_contents = []
   end
 
-
+  def stomach_contents_count()
+    return @stomach_contents.count()
+  end
 
 
 
