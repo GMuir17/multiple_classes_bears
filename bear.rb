@@ -13,10 +13,7 @@ class Bear
   end
 
   def eat_fish(river)
-    @river.add_fish(@fish1)
-    dead_fish = @fish_number.fish_taken()
-    @stomach_contents.push(dead_fish)
-    @fish_number.delete(dead_fish)
+    @stomach_contents.push(@fish_number)
   end
 
 
